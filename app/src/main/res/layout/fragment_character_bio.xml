@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hero_bg_gradient"
+    tools:context="com.samer.herome.Fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="SUPERMAN"
+            android:textColor="@color/text_color"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/matrix"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bigsupermanlogo"
+                tools:layout_editor_absoluteX="40dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="BACKSTORY"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/descriptionTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="-27dp"
+            android:gravity="center_horizontal"
+            android:text="                  Superman's age has varied through his history in comics, with the character typically being in his 30s. His age was originally left undefined, with real-time references to specific years sometimes given to past events in Golden Age and early Silver Age comics. In comics published between the early 1970s and early 1990s"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/primaryPowerTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp"
+            android:text="PRIMARY POWER"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/primaryPowerBtn"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@drawable/atomic_icon"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Genetic mutation"
+            android:textColor="@color/text_color"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/secondaryPowerTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="SECONDARY POWER"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/secondaryPowerBtn"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@drawable/rocket_icon"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Born with them"
+            android:textColor="@color/text_color"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/startOverBtn"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hero_solid_button"
+            android:backgroundTint="@color/text_color"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="start over"
+            android:textColor="@color/text_color_solid_btn"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
